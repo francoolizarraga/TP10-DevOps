@@ -1,7 +1,5 @@
 # TP10-DevOps
 
-# TP10-DevOps
-
 Para este Proyecto utilizamos de base el tp6 que levanta una pagina web de administracion de personas creada con Pyhton-Django y incluye un motor de base de datos Postgresql.
 
 ## Paso 0: Instalar Herramientas/Entorno de trabajo
@@ -28,14 +26,18 @@ vagrant ssh -- -L 5000:localhost:5000
 
 ## Paso 1: Dockerfile
 
-1. Para construir la imagen de docker podremos hacerlo de forma manual descargando el codigo y haciendo un docker build o utilizar la github action ya configurada para que en cada cambio que hagamos en algun archivo del directorio Docker, se ejecute y haga el proceso de construir la imagen y subirla a dockerhub, es importante haber activado Github Actions y configurado los secretos para subir la imagen a dockerhub.
+1. Para construir la imagen de docker podremos hacerlo de forma manual descargando el codigo y haciendo un docker build del directorio Parte 2 
 
 ## Paso 2: Kubernetes
 
 1. Para este paso es tan simple como verificar estar conectados a nuestro cluster de kubernetes (poder ejecutar un kubectl get pods -A sin errores) y asi crear nuestros recursos dentro del directorio Kubernetes con el siguiente comando:
 
 ```
-kubectl apply -f Kubernetes/deployment.yaml
+kubectl apply -f Kubernetes/kubectl.yaml
 ```
 
-En caso de que querramos probar el escalado de nuestros recursos (deployments o replicasets) podremos utilizar un comando similar al siguiente:
+## Paso 3: ArgoCD y Helm
+
+1. Por ultimo, tendremos la parte de ArgoCD. Podremos crear aplicaciones ya sea utilizando la CLI o utilizando la interfaz grafica de Argo. En este caso utilizaremos el archivo kubectl.yaml dentro del directorio Parte 5  Por ejemplo si quisieramos hacerlo con el ArgoCD CLI:
+
+una vez creado el argo cd vamos a convertir este yaml a Helm con la aplicacion Helmify que la descargamos de la siguiente URL:
