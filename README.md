@@ -1,4 +1,11 @@
 # TP10-DevOps
+# Integrantes
+-Julian Zanetti
+-Ricardo Pacheco
+-Eduardo Ghidoli
+-Franco Lizarraga
+
+
 
 Para este Proyecto utilizamos de base el tp6 que levanta una pagina web de administracion de personas creada con Pyhton-Django y incluye un motor de base de datos Postgresql.
 
@@ -94,3 +101,20 @@ helmify -f /my_directory -r kubectl.yaml
 ```
 
 esto nos creara 1 carpeta y 2 archivos, denstro de la carpeta templates estara el archivo convertido
+
+En la interfaz de argo si levantamos el Helm nos deberia dar todo OK
+
+![helm 2](https://github.com/francoolizarraga/TP10-DevOps/assets/116183200/ca4e1909-ee5f-4569-9031-ed60be3884b6)
+
+
+
+
+Deploy de ambas metodologias corriendo
+
+![helm](https://github.com/francoolizarraga/TP10-DevOps/assets/116183200/2f0065f4-837f-48f4-b0be-a8ab88538928)
+
+
+
+
+
+
