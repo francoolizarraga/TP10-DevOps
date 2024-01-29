@@ -1,10 +1,10 @@
 # TP10-DevOps
 # Integrantes
--Julian Zanetti
--Ricardo Pacheco
--Eduardo Ghidoli
--Franco Lizarraga
 
+- Julian Zanetti
+- Eduardo Ghidoli
+- Ricardo Pacheco
+- Franco Lizarraga
 
 
 Para este Proyecto utilizamos de base el tp6 que levanta una pagina web de administracion de personas creada con Pyhton-Django y incluye un motor de base de datos Postgresql.
